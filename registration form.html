@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration form</title>
+    <style>
+      .container{
+        border:1px solid black;
+        width:500px;
+        background-color:grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+
+
+
+      <table align="center" width:"500px">
+      <caption>Registration form</caption>
+      <tr>
+        <td>User name</td>
+        <td><input type="text" name="txtname" placeholder="max 10 chars only" pattern="[A-Z]"></td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td><input type="password" name="txtpassword" placeholder="should 4-10 chars only" pattern="[A-Z a-z 0-9 ]""></td>
+
+      </tr>
+      <tr>
+        <td>age</td>
+        <td><input type="number" name="txtage" min="15" max="30" value="2"></td>
+
+      </tr>
+      <tr>
+        <td>email</td>
+        <td><input type="email" name="txtemail"]></td>
+
+      </tr>
+      <tr>
+        <td>favourite color</td>
+        <td><input type="color" name="txtcolor"list="colors"></td>
+        <datalist id="colors">
+          <option>red</option>
+          <option>black</option>
+          <option>grey</option>
+
+        </datalist>
+      </tr>
+      <tr>
+        <td>favorite cricketer</td>
+        <td><input type="text" list="players"></td>
+        <datalist id="players">
+          <option>dhoni</option>
+          <option>gambhir</option>
+          <option>kohli</option>
+
+        </datalist>
+      </tr>
+      <tr>
+        <td>upload photo</td>
+        <td><input type="file" name="txtfile"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" name="" value="register"></td>
+      </tr>
+
+
+
+
+      </table>
+</div>
+
+  </body>
+</html>
